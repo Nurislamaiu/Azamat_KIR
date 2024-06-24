@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:kirazamat/src/features/authentication/screens/forgotPassword/forgotPassword.dart';
+import 'package:kirazamat/src/features/authentication/screens/menu/menu_screen.dart';
 
 import '../../../../../constans/color_strings.dart';
 import '../../../../../constans/text_strings.dart';
@@ -77,8 +79,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {
-                },
+                onPressed: ()=> Get.to(MenuScreen()),
                 child: Text(
                   tLogin.toUpperCase(),
                   style: TextStyle(color: tWhiteColor),

@@ -21,15 +21,23 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-        child: AppBar(
-          automaticallyImplyLeading: false,
-          leading: IconButton(onPressed: () {}, icon: Icon(Icons.location_on, color: tButtonColor,size: 24)),
-          title: title,
-          titleSpacing: 0,
-          actions: actions,
-        ));
+    return AppBar(
+        surfaceTintColor: Colors.transparent,
+        backgroundColor: tWhiteColor,
+        automaticallyImplyLeading: false,
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.location_on,
+            color: tButtonColor,
+            size: 24,
+          ),
+          highlightColor: Colors.transparent,
+          splashColor: Colors.transparent,
+        ),
+        title: title,
+        titleSpacing: 0,
+        actions: actions);
   }
 
   @override

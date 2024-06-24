@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kirazamat/src/constans/color_strings.dart';
 import 'package:kirazamat/src/features/authentication/screens/login/widgets/login_footer_widget.dart';
 import 'package:kirazamat/src/features/authentication/screens/login/widgets/login_form_widget.dart';
 import 'package:kirazamat/src/features/authentication/screens/login/widgets/login_header_widget.dart';
@@ -11,8 +12,8 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //Get the size in LoginHeaderWidget()
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
+        backgroundColor: tWhiteColor,
         resizeToAvoidBottomInset: false,
         body: Container(
             padding: const EdgeInsets.all(15),
@@ -27,7 +28,6 @@ class LoginScreen extends StatelessWidget {
               ],
             ),
           ),
-        ),
     );
   }
 }

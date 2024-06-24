@@ -3,6 +3,7 @@ import 'package:kirazamat/src/features/authentication/screens/newpassword/newpas
 
 import '../../../../../constans/color_strings.dart';
 import '../../../../../constans/text_strings.dart';
+import '../../otp/otp_screen.dart';
 
 class ForgotForm extends StatelessWidget {
   const ForgotForm({
@@ -43,7 +44,7 @@ class ForgotForm extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => NewPasswordScreen()),
+                    MaterialPageRoute(builder: (context) => OTPScreen()),
                   );
                 },
                 child: Text(

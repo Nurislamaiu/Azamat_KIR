@@ -10,9 +10,9 @@ class NewPassworHeaderdWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(tNewPasswordTitle, style: Theme.of(context).textTheme.titleSmall),
+        Text(tNewPasswordTitle, style: Theme.of(context).textTheme.headlineLarge),
         const SizedBox(height: 10),
-        Text(tNewPasswordSubTitle, style: Theme.of(context).textTheme.titleMedium),
+        Text(tNewPasswordSubTitle, style: Theme.of(context).textTheme.headlineSmall),
       ],
     );
   }

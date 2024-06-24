@@ -10,9 +10,9 @@ class ForgotHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(tForgetPasswordTitle, style: Theme.of(context).textTheme.titleSmall),
+        Text(tForgetPasswordTitle, style: Theme.of(context).textTheme.headlineLarge),
         const SizedBox(height: 10),
-        Text(tForgetPasswordSubTitle, style: Theme.of(context).textTheme.titleMedium),
+        Text(tForgetPasswordSubTitle, style: Theme.of(context).textTheme.headlineSmall),
       ],
     );
   }

@@ -11,9 +11,7 @@ class TElevatedButtonTheme{
     style: ElevatedButton.styleFrom(
         shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12.0))),
         foregroundColor: tWhiteColor,
-        backgroundColor:tButtonColor,
-        padding:
-        const EdgeInsets.symmetric(vertical: tButtonHeight)),
+        backgroundColor:tButtonColor,),
   );
 
   /*-- Dark Theme --*/

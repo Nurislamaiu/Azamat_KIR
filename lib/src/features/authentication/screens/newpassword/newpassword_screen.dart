@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kirazamat/src/constans/color_strings.dart';
 import 'package:kirazamat/src/features/authentication/screens/otp/widgets/newpassword_footer_widget.dart';
 import 'package:kirazamat/src/features/authentication/screens/newpassword/widgets/newpassword_form_widget.dart';
 import 'package:kirazamat/src/features/authentication/screens/newpassword/widgets/newpassword_header_widget.dart';
@@ -8,8 +9,8 @@ class NewPasswordScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
+      backgroundColor: tWhiteColor,
         resizeToAvoidBottomInset: false,
         body: Container(
           padding: const EdgeInsets.all(15),
@@ -24,7 +25,6 @@ class NewPasswordScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }

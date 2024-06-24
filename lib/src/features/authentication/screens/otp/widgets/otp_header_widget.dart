@@ -10,9 +10,9 @@ class OtpHeaderWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(tOtpTitle, style: Theme.of(context).textTheme.titleSmall),
+        Text(tOtpTitle, style: Theme.of(context).textTheme.headlineLarge),
         const SizedBox(height: 10),
-        Text(tOtpSubTitle, style: Theme.of(context).textTheme.titleMedium),
+        Text(tOtpSubTitle, style: Theme.of(context).textTheme.headlineSmall),
       ],
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:kirazamat/src/features/authentication/screens/menu/menu_screen.dart';
 
 import '../../../../../constans/color_strings.dart';
 import '../../../../../constans/text_strings.dart';
@@ -99,7 +101,7 @@ class SignUpForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: ()=> Get.to(MenuScreen()),
                 child: Text(
                   tConfrim.toUpperCase(),
                   style: TextStyle(color: tWhiteColor),

@@ -15,4 +15,15 @@ const String tCardImage4 = "assets/images/cardimage4.png";
 const String tCardImage5 = "assets/images/cardimage5.png";
 const String tCardImage6 = "assets/images/cardimage6.png";
 
+const String tCircleIconImage1 = "assets/icons/carpet.png";
+
+const String tKilemCardImage1 = "assets/icons/cardImage1.png";
+const String tKilemCardImage2 = "assets/icons/cardImage2.png";
+const String tKilemCardImage3 = "assets/icons/cardImage3.png";
+const String tKilemCardImage4 = "assets/icons/cardImage4.png";
+const String tKilemCardImage5 = "assets/icons/cardImage5.png";
+const String tKilemCardImage6 = "assets/icons/cardImage6.png";
+
+const String tShoppingKilem = "assets/images/carpetshopping.png";
+
 

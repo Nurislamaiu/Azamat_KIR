@@ -18,6 +18,8 @@ class TTextTheme {
     displayLarge: GoogleFonts.inter(fontSize: 20.0, fontWeight: FontWeight.w700, color: tDarkColor),
     displayMedium: GoogleFonts.inter(fontSize: 16.0, fontWeight: FontWeight.w600, color: tWhiteColor),
     displaySmall: GoogleFonts.inter(fontSize: 9.0, fontWeight: FontWeight.w400, color: tWhiteColor),
+    labelSmall: GoogleFonts.inter(fontSize: 8.0, fontWeight: FontWeight.w400, color: tWhiteColor),
+    labelMedium: GoogleFonts.inter(fontSize: 10.0, fontWeight: FontWeight.w500, color: tWhiteColor),
   );
 
   static TextTheme darkTextTheme = TextTheme();

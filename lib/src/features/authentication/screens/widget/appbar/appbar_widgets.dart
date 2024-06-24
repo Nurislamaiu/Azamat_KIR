@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:kirazamat/src/constans/color_strings.dart';
+import 'package:kirazamat/src/features/authentication/screens/profile/profile_screen.dart';
 
+import '../../shoppingCart/cart_screen.dart';
 import 'appbar.dart';
 
 class AppBarWidget extends StatelessWidget {
@@ -15,7 +19,7 @@ class AppBarWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text("Адрес",
-              style: Theme.of(context).textTheme.labelMedium),
+              style: Theme.of(context).textTheme.labelMedium?.apply(color: tDarkColor)),
           Text("Казакстан, Астана", style: Theme.of(context).textTheme.titleSmall),
         ],
       ),
@@ -30,9 +34,11 @@ class AppBarWidget extends StatelessWidget {
           ),
           constraints: BoxConstraints(maxWidth: 40.0, maxHeight: 40.0),
           child: IconButton(
-            onPressed: () {},
+            onPressed: ()=> Get.to(CartScreen()),
             icon: Icon(Iconsax.shopping_bag),
             iconSize: 24.0,
+            highlightColor: Colors.transparent,
+            splashColor: Colors.transparent,
           ),
         ),
         SizedBox(width: 5),
@@ -46,12 +52,14 @@ class AppBarWidget extends StatelessWidget {
           ),
           constraints: BoxConstraints(maxWidth: 40.0, maxHeight: 40.0),
           child: IconButton(
-            onPressed: () {},
+            onPressed: ()=> Get.to(ProfileScreen()),
             icon: Icon(Iconsax.user),
             iconSize: 24.0,
+            highlightColor: Colors.transparent,
+            splashColor: Colors.transparent,
           ),
         ),
-
+        SizedBox(width: 15)
       ],
     );
   }

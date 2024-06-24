@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:kirazamat/src/features/authentication/screens/menu/menu_screen.dart';
 import '../../../../../constans/color_strings.dart';
+import '../../deliveryDate/deliveryDateScreen.dart';
 
 
 class floatingActionButton extends StatelessWidget {
@@ -14,7 +18,7 @@ class floatingActionButton extends StatelessWidget {
       width: 82.0,
       height: 82.0,
       child: FloatingActionButton(
-        onPressed: () {},
+        onPressed: ()=> Get.to(MenuScreen()),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Image(
@@ -52,7 +56,7 @@ class bottomNavigatorBar extends StatelessWidget {
           ),
           SizedBox(height: double.infinity),
           IconButton(
-            onPressed: () {},
+            onPressed: ()=> Get.to(DeliveryDateScreen()),
             icon: Image(
               image: AssetImage('assets/icons/shopicon.png'),
               width: ScreenUtil().setWidth(24),

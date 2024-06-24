@@ -8,16 +8,16 @@ class TAppTheme {
   TAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
-    brightness: Brightness.light,
-    textTheme: TTextTheme.lightTextTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme
+      brightness: Brightness.light,
+      textTheme: TTextTheme.lightTextTheme,
+      outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
+      elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme
   );
 
   static ThemeData darkTheme = ThemeData(
-    brightness: Brightness.dark,
-    textTheme: TTextTheme.darkTextTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme
+      brightness: Brightness.dark,
+      textTheme: TTextTheme.darkTextTheme,
+      outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+      elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme
   );
 }

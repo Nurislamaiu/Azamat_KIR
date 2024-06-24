@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:kirazamat/src/constans/color_strings.dart';
 
 import 'package:kirazamat/src/features/authentication/screens/profile/widgets/profile_header.dart';
 import 'package:kirazamat/src/features/authentication/screens/profile/widgets/profile_menu.dart';
@@ -19,6 +20,7 @@ class ProfileScreen extends StatelessWidget {
       floatingActionButton: floatingActionButton(),
       bottomNavigationBar: bottomNavigatorBar(),
       resizeToAvoidBottomInset: false,
+      backgroundColor: tWhiteColor,
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -33,5 +35,3 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-
-

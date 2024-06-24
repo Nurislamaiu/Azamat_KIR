@@ -10,9 +10,9 @@ class SignUpHeaderWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(tSignUpTitle, style: Theme.of(context).textTheme.titleSmall),
+        Text(tSignUpTitle, style: Theme.of(context).textTheme.headlineLarge),
         const SizedBox(height: 10),
-        Text(tSignUpSubTitle, style: Theme.of(context).textTheme.titleMedium),
+        Text(tSignUpSubTitle, style: Theme.of(context).textTheme.headlineSmall),
       ],
     );
   }

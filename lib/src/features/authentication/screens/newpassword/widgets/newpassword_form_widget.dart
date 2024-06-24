@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:kirazamat/src/features/authentication/screens/login/login_screen.dart';
 
 import '../../../../../constans/color_strings.dart';
 import '../../../../../constans/text_strings.dart';
@@ -59,7 +61,7 @@ class NewPasswordForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: ()=> Get.to(LoginScreen()),
                 child: Text(
                   tConfrim.toUpperCase(),
                   style: TextStyle(color: tWhiteColor),
